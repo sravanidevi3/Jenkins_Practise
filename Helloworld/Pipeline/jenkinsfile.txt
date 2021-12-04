@@ -1,0 +1,29 @@
+pipeline{
+  agent any
+  stages{
+      stage ( " SCM Checkout "){
+	    steps{
+		         
+		
+		}
+	}
+
+   	  stage ( " print satge1 "){
+	    steps{
+                   echo " stage1 "
+
+		}
+	}
+
+      stage ( " indentation "){
+        steps{
+		        echo " stage2 "
+
+		}
+	  }
+  }
+
+}
+   
+		
+	  
