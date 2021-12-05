@@ -10,7 +10,7 @@ pipeline{
 
    	  stage ( " print satge1 "){
 	    steps{
-                   dir("${WORKSPACE}/Helloworld/Scripts/")
+                        dir("${WORKSPACE}/Helloworld/Scripts/")
 				   {
 				   sh " python Helloworld.py "
 				   }
