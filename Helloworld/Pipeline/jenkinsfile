@@ -31,7 +31,7 @@ pipeline{
 	    steps{
 		        dir("${WORKSPACE}/Helloworld/Scripts/")
 				   {
-				   sh " python disc_space.py "
+				   sh " python discspace.py "
 				   }
 		}
           }			   
