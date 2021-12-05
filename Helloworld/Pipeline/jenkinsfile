@@ -10,17 +10,31 @@ pipeline{
 
    	  stage ( " print satge1 "){
 	    steps{
-                   echo " stage1 "
+                   dir("${WORKSPACE}/Helloworld/Scripts/")
+				   {
+				   sh " python Helloworld.py "
+				   }
 
 		}
 	}
 
       stage ( " indentation "){
         steps{
-		        echo " stage2 "
+		        dir("${WORKSPACE}/Helloworld/Scripts/")
+				   {
+				   sh " python indent.py "
+				   }  
 
 		}
 	  }
+	  stage ( " disc space " ){
+	    steps{
+		        dir("${WORKSPACE}/Helloworld/Scripts/")
+				   {
+				   sh " python disc_space.py "
+				   }
+		}
+          }			   
   }
 
 }
