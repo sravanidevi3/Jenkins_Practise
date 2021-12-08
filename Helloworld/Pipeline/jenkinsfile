@@ -48,7 +48,17 @@ pipeline{
 				    }
 				    
 		  }
-	   }	  
+	   }
+	   
+      stage ( " discspace " ){
+         steps{
+	                dir("${WORKSPACE}/Hello/Scripts/")
+			            {
+				    sh " python discspace.py "
+				    }
+				    
+		   }
+            }		   
   }
 
 }
