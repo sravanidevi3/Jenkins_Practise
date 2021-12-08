@@ -3,7 +3,7 @@ pipeline{
   stages{
       stage ( " SCM Checkout "){
 	    steps{
-		  checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Git', url: 'https://github.com/sravanidevi3/Jenkins_Practice.git']]])       
+		  checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Git', url: 'https://github.com/sravanidevi3/Jenkins_Practise.git']]])       
 		
 		}
 	}
