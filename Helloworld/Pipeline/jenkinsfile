@@ -27,9 +27,17 @@ pipeline{
 
 		}
 	  }
-	  
-	 
-	  
+	
+      stage ( " adding " ){
+        steps{
+	       
+	                dir("${WORKSPACE}/Helloworld/Scripts/")
+			            {
+				    sh " python adding.py "
+				    }
+				    
+		 }
+	  }	 
   }
 
 }
