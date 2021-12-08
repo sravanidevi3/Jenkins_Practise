@@ -7,4 +7,4 @@ b=5
 sum = a - b
 
 # display the sum of two no's
-print('The sum of a -b is sum')
+print('The sum of a - b is sum')
