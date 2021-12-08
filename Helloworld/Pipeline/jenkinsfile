@@ -27,14 +27,7 @@ pipeline{
 
 		}
 	  }
-	  stage ( " disc space " ){
-	    steps{
-		        dir("${WORKSPACE}/Helloworld/Scripts/")
-				   {
-				   sh " python discspace.py "
-				   }
-		}
-          }			   
+	  
   }
 
 }
